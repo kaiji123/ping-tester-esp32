@@ -1,5 +1,5 @@
 #include <WiFi.h>
-#include <ESPping>
+#include <ESPping.h>
 
 const char* ssid = "Wokwi-GUEST";
 const char* password = "";
@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   // Perform the ping test
-  bool success = Ping.ping(pping_host);
+  bool success = Ping.ping(ping_host);
 
   if (success) {
     Serial.print("Ping successful. Time taken: ");
